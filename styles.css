@@ -3,28 +3,44 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
 }
 
 .card {
-    width: 300px;
+    width: 320px;
     background: white;
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #3498db;
+    border: 4px solid white;
+    margin-top: 50px;
+    background: white;
 }
 
 .name {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
     color: #333;
     margin: 10px 0;
@@ -32,11 +48,28 @@ body {
 
 .job {
     font-size: 1.2em;
-    color: #777;
+    color: #666;
+    font-style: italic;
 }
 
 .contact {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #555;
+    margin-top: 8px;
+    font-size: 1em;
+    color: #444;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.icon {
+    font-size: 1.5em;
+    margin: 0 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
 }
