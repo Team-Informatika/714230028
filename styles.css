@@ -4,14 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #5A01A7, #3C76E3);
+    background-color: #f4f4f4;
     margin: 0;
 }
 
 .dashboard {
     display: flex;
     width: 80%;
-    max-width: 1000px; /* Lebarkan agar lebih proporsional */
+    max-width: 900px;
     height: 400px;
     background: white;
     border-radius: 15px;
@@ -70,11 +70,9 @@ body {
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 400px; /* Lebarkan kartu */
-    max-width: 90%;
+    width: 300px;
 }
 
-/* Foto Profil */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -84,16 +82,18 @@ body {
     margin-bottom: 15px;
 }
 
-/* Nama */
 .info h2 {
     margin: 10px 0;
-    font-size: 1.8em; /* Ukuran lebih besar */
+    font-size: 1.5em;
     color: #2c3e50;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
-/* Info lainnya */
+.job {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
 .info p {
     margin: 5px 0;
     color: #555;
